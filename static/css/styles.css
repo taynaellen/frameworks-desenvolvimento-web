@@ -116,6 +116,7 @@ main{
 .ul-main{
     width: 24rem;
     margin: 2rem;
+    
 }
 
 span{
@@ -129,6 +130,8 @@ span{
 .li-main{
     margin: .5rem;
     margin-top: 1.5rem;
+    border-left: .05rem solid black;
+    padding-left: 1rem;
 }
 
 footer{
@@ -140,11 +143,19 @@ footer{
     align-items: center;
 }
 
+.infos{
+    border-left: .15rem solid black;
+    padding-left: 1rem;
+}
+
 .student{
     width: 18rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-left: .15rem solid black;
+    padding-left: 1rem;
 }
 
 
