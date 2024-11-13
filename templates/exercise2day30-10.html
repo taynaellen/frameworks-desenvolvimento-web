@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capturar Imagem da Webcam</title>
+    <style>
+        body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, sans-serif;
+        }
+        video, canvas {
+        border: 1px solid #ddd;
+        margin-top: 10px;
+        }
+        #captureButton {
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        }
+    </style>
+    </head>
+    <body>
+
+    <h1>Capturar Imagem da Webcam</h1>
+    <video id="webcam" autoplay playsinline width="640" height="480"></video>
+    <button id="captureButton">Capturar Imagem</button>
+    <canvas id="snapshot" width="640" height="480"></canvas>
+
+    <script>
+    const video = document.getElementById('webcam');
+    const canvas = document.getElementById('snapshot');
+    const captureButton = document.getElementById('captureButton');
+    const ctx = canvas.getContext('2d');
+
+    async function startWebcam() {
+        try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+        video.srcObject = stream;
+        } catch (error) {
+        alert('Erro ao acessar a webcam: ' + error.message);
+        }
+    }
+
+    captureButton.addEventListener('click', () => {
+        ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    });
+
+    window.addEventListener('load', startWebcam);
+</script>
+
+</body>
+</html>

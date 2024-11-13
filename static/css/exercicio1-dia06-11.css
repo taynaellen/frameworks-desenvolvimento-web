@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 16rem;
+    border: .1rem solid blueviolet;
+    border-radius: .5rem;
+    box-shadow: .2rem .2rem .5rem .1rem rgba(0,0,0,0.75);
+}
+
+/* 
+label{
+
+} */
+
+#user, #password{
+    width: 15rem;
+    height: 2rem;
+    padding: .2rem;
+    border: .1rem solid gray;
+    border-radius: .5rem;
+}
+
+button{
+    width: 10rem;
+    height: 2rem;
+    margin: 1rem;
+    background-color: rgb(163, 97, 225);
+    border: none;
+    border-radius: .5rem;
+}
