@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/048f53145f.js" crossorigin="anonymous"></script>
+    <title>Aula 3</title>
+    <link rel="stylesheet" href="/static/css/aulas_teoricas.css">
+</head>
+<body>
+        <h1>AULA 03 - Criando ambientes virtuais</h1>
+
+        <h2>Passo a passo:</h2>
+        <ul>
+            <li><strong>Criação do ambiente virtual no terminal do VSCode:</strong> <code>python -m venv nome_do_ambiente</code></li>
+            <li><strong>Autorização da criação de ambientes virtuais no PowerShell:</strong>
+                <ul>
+                    <li><code>Get-ExecutionPolicy</code></li>
+                    <li><code>Set-ExecutionPolicy RemoteSigned -Scope CurrentUser</code></li>
+                </ul>
+            </li>
+            <li><strong>Ativação do ambiente virtual:</strong> <code>nome_do_ambiente\Scripts\activate</code></li>
+        </ul>
+
+        <h2>Acessando o ambiente virtual</h2>
+        <ul>
+            <li><strong>Navegar até o diretório do projeto:</strong> <code>cd D:\Documentos\Usuário\Documents\GitHub\FrameworksDesenvolvimentoWeb\projeto01</code></li>
+            <li><strong>Ativar o ambiente virtual:</strong> <code>ambiente1.venv\Scripts\activate</code></li>
+            <li><strong>Desativar o ambiente virtual:</strong> <code>deactivate</code></li>
+        </ul>
+
+        <h2>Instalação de dependências:</h2>
+        <ul>
+            <li><strong>Instalar pacotes:</strong> <code>pip install nome_pacote</code></li>
+            <li><strong>Listar pacotes instalados:</strong> <code>pip list</code></li>
+        </ul>
+
+        <h2>Pacotes instalados na aula:</h2>
+        <ul>
+            <li><code>flask</code></li>
+            <li><code>flask-sqlalchemy</code></li>
+            <li><code>numpy</code> – Utilizado para manipulação de arrays e matrizes, sendo mais eficiente que laços de repetição convencionais.</li>
+        </ul>
+
+        <h2>Fonte de pacotes recomendada:</h2>
+        <p><strong><a href="https://pypi.org" target="_blank">PyPI</a></strong> – Repositório oficial de pacotes Python, contendo informações detalhadas sobre instalação e uso.</p>
+
+
+    <footer>
+        <div class="infos">
+            <p>Portifólio de aulas da Unidade Curricular de Frameworks para Desenvolvimento Web. <br>
+                Turma TADS 4 2024. <br>
+                Professor Alex Araújo.
+            </p>
+
+        </div>
+
+        <div class="student">
+            <p href="">Por <a href="" class="me links"><b>Tayná Souza</b></a><br>
+                <a class="links" href="https://github.com/taynaellen"><i class="fa-brands fa-github fa-lg i-footer"></i>GitHub</a><br>
+                <a class="links" href="https://www.linkedin.com/in/taynaellen-souza/"><i class="fa-brands fa-linkedin fa-lg i-footer"></i>Linkedin</a><br>
+                <a class="links" href=""><i class="fa-solid fa-envelope fa-lg i-footer"></i>taynaellen1@gmail.com</a>
+            </p>
+            
+        </div>
+    </footer>
+</body>
+</html>

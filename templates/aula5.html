@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/048f53145f.js" crossorigin="anonymous"></script>
+    <title>Aula 5</title>
+    <link rel="stylesheet" href="/static/css/aulas.css">
+</head>
+<body>
+    <h1>Aula 5 - Lista de atividades</h1>
+
+    <div class="exercicios">
+        <p><b>1</b> - Considerando um usuário e uma senha mocados (dados fictícios) faça uma página deautenticação que retorne uma mensagem caso a autenticação funcione (bom <br>dia, tarde, noite a depender do horário), se não, diz que o login não bateu;</p> <br> <br>
+        <p><b>2</b> - Limite as tentativas de autenticação do usuário em 2x, se ele errar duas vezes, tire a opção de login e exiba uma mensagem de erro;</p> <br> <br>
+        <p><b>3</b> - Estilizar de forma bonita a página de identificação;</p> <br> <br>
+        <p><b>4</b> - Escreva um script python que gere automaticamente um template HTML contendo um formulário para input de dados com os campos que serão recebidos por JSON <br>(gerar o .html e o formulário, a outra parte do código recebe os dados em JSON, trata ele e devolve como uma lista de strings); </p> <br> <br>
+        <p><b>5</b> - Incremente o script 4 para que após gerar o template, ele construa automaticamente uma rota que permita visualiza-lo; </p> <br> <br>
+        <p><b>6</b> - Crie uma classe em python que encapsule dados de usuário entre 5 e 6 campos, e desenvolva uma função de autenticação (validar dados, criar uma sessão para <br>guardar e autenticar); </p> <br> <br>
+    </div>
+
+    <h2>Link para o formulário das atividades</h2> <br>
+    <ul>
+        <li><a data-route="{{ url_for('aula5.aula5_login') }}" class="a-header" href="{{ url_for('aula5.aula5_login') }}">Formulário para as atividades 1, 2 e 3</a></li>
+        <li><a data-route="{{ url_for('aula5.aula5_formulario') }}" class="a-header" href="{{ url_for('aula5.aula5_formulario') }}">Formulário para as atividades 4 e 5</a></li>
+        <li><a data-route="{{ url_for('aula5.autenticar') }}" class="a-header" href="{{ url_for('aula5.autenticar') }}">Formulário para a atividade 6</a></li>
+    </ul> <br> <br>
+
+    <footer>
+        <div class="infos">
+            <p>Portifólio de aulas da Unidade Curricular de Frameworks para Desenvolvimento Web. <br>
+                Turma TADS 4 2024. <br>
+                Professor Alex Araújo.
+            </p>
+
+        </div>
+
+        <div class="student">
+            <p href="">Por <a href="" class="me links"><b>Tayná Souza</b></a><br>
+                <a class="links" href="https://github.com/taynaellen"><i class="fa-brands fa-github fa-lg i-footer"></i>GitHub</a><br>
+                <a class="links" href="https://www.linkedin.com/in/taynaellen-souza/"><i class="fa-brands fa-linkedin fa-lg i-footer"></i>Linkedin</a><br>
+                <a class="links" href=""><i class="fa-solid fa-envelope fa-lg i-footer"></i>taynaellen1@gmail.com</a>
+            </p>
+            
+        </div>
+    </footer>
+</body>
+</html>

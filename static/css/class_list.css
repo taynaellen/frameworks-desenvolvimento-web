@@ -21,110 +21,64 @@ html{
     font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: var(--color1);
-}
-
-.container{
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 100vh; 
 }
 
-h1{
-    margin: 1.5rem;
-    font-size: 3.5rem;
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    margin: 2rem;
 }
 
-header{
-    width: 100%;
-    height: 4rem;
-    background-color: var(--color2);
-}
-
-.menu {
+ul {
+    background: linear-gradient(135deg, var(--color2), var(--color5));
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 500px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.li-header {
-    font-size: 1.5rem;
+li {
     padding: 1rem;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: bold;
+    backdrop-filter: blur(5px);
+}
+
+li:hover {
+    background: var(--color3);
+    transform: translateX(5px) scale(1.05);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+li a {
     color: white;
-    width: 15rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: .4s;
-    text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    display: block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
     text-decoration: underline;
 }
 
-.li-header:hover{
-    transform: scale(1.1);
-}
-
-.li-header i{
-    padding-right: .5rem;
-}
-
-
-
-
-main{
-    width: 90%;
-    margin: 2rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.img1{
-    width: 30rem;
-    height: 30rem;
-    background-image: url(/static/img/framework.jpg);
-    background-size: cover;
-}
-
-.content{
-    border-radius: .5rem;
-    width: 52rem;
-    height: 25rem;
-    text-align: justify;
-    display: flex;
-    justify-content:space-between;
-    box-shadow: 2.5px 2.5px 10px 1px rgba(0,0,0,0.5);
-    background-color: var(--color1);
-}
-
-
-.ul-main{
-    width: 24rem;
-    margin: 2rem;
-    
-}
-
-span{
-    color: var(--color4);
-}
-
-.ul-main i{
-    padding: .5rem;
-}
-
-.li-main{
-    margin: .5rem;
-    margin-top: 1.5rem;
-    border-left: .15rem solid var(--color4);
-    padding-left: 1rem;
-}
-
 footer{
+    margin-top: 4rem;
     background-color: var(--color2);
     width: 100%;
     height: 14rem;

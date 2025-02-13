@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - Tabela Estilizada</title>
+    <link rel="stylesheet" href="/static/css/aula4_exercicio3.css">
+</head>
+<body>
+    <h2>Tabela de Usuários</h2>
+    <div class="table">
+        <div class="row header">
+            <div>ID</div>
+            <div>Nome</div>
+            <div>Sobrenome</div>
+            <div>Email</div>
+            <div></div>
+        </div>
+        {% for i in range(1, 998) %}
+        <div class="row">
+            <div class="cell">{{ i }}</div>
+            <div class="cell">Nome {{ i }}</div>
+            <div class="cell">Sobrenome {{ i }}</div>
+            <div class="cell">email{{ i }}@teste.com</div>
+            <div class="cell actions">
+                <button>Editar</button>
+                <button style="background-color: #d62839;">Excluir</button>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</body>
+</html>

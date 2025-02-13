@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/048f53145f.js" crossorigin="anonymous"></script>
+    <title>Aula 4</title>
+    <link rel="stylesheet" href="/static/css/aulas.css">
+</head>
+<body>
+    <h1>Aula 4 - Lista de atividades</h1>
+
+    <div class="exercicios">
+        <p><b>1</b> - Crie uma rota para uma página web com a tag canvas que permite ao usuário deslocar uma fotografia para a direita e esquerda com as setinhas do teclado</p> <br><br>
+        <p><b>2</b> - Crie uma rota para a atividade 2 que permita ao usuário capturar uma fotografia pela webcam e mostrar na tela</p> <br><br>
+        <p><b>3</b> - Crie uma rota para a atividade 3 com python app que exiba uma tabela (sem usar table) com 997 linhas e 5 colunas: nas colunas id, nome, sobrenome, e-mail, ações.</p> <br><br>
+        <p><b>4</b> - Crie uma rota com 3 links, um para cada uma das atividades anteriores, porém todas elas bonitas</p> <br><br>
+        <p><b>5</b> - Crie 6 rotas, sendo cada uma estilizada, bonita e etc. Sendo que em cada rota deve conter o currículo de um integrante do grupo. </p> <br> <br>
+    </div>
+
+    <h2>Links para as atividades</h2> <br>
+    <ul>
+        <li><a data-route="{{ url_for('aula4.aula4_exercicio1') }}" class="a-header" href="{{ url_for('aula4.aula4_exercicio1') }}">Atividade 1</a></li>
+        <li><a data-route="{{ url_for('aula4.aula4_exercicio2') }}" class="a-header" href="{{ url_for('aula4.aula4_exercicio2') }}">Atividade 2</a></li>
+        <li><a data-route="{{ url_for('aula4.aula4_exercicio3') }}" class="a-header" href="{{ url_for('aula4.aula4_exercicio3') }}">Atividade 3</a></li>
+        <li><a data-route="{{ url_for('aula4.aula4_exercicio4') }}" class="a-header" href="{{ url_for('aula4.aula4_exercicio4') }}">Atividade 4</a></li>
+        <li><a data-route="{{ url_for('aula4.aula4_exercicio5') }}" class="a-header" href="{{ url_for('aula4.aula4_exercicio5') }}">Atividade 5</a></li>
+    </ul>
+
+    <footer>
+        <div class="infos">
+            <p>Portifólio de aulas da Unidade Curricular de Frameworks para Desenvolvimento Web. <br>
+                Turma TADS 4 2024. <br>
+                Professor Alex Araújo.
+            </p>
+
+        </div>
+
+        <div class="student">
+            <p href="">Por <a href="" class="me links"><b>Tayná Souza</b></a><br>
+                <a class="links" href="https://github.com/taynaellen"><i class="fa-brands fa-github fa-lg i-footer"></i>GitHub</a><br>
+                <a class="links" href="https://www.linkedin.com/in/taynaellen-souza/"><i class="fa-brands fa-linkedin fa-lg i-footer"></i>Linkedin</a><br>
+                <a class="links" href=""><i class="fa-solid fa-envelope fa-lg i-footer"></i>taynaellen1@gmail.com</a>
+            </p>
+            
+        </div>
+    </footer>
+</body>
+</html>
