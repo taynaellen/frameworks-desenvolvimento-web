@@ -5,7 +5,7 @@ from datetime import datetime
 import secrets
 
 app = Flask(__name__)
-app.secret_key = 'e6b4d9f7e3a243e9c5f8a1b0d3e2f7c8a4b6c1d2e5f9b3a7e8d1f2c6a5b4e9f0'
+app.secret_key = 'key'
 
 aula5_bp = Blueprint('aula5', __name__)
 
